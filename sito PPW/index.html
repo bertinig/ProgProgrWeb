@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Giulia Bertini">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Mouth Watering </title>
+    <link rel="icon" type="image/x-icon" href="foto/favicon.png">
+    <script src="codIndex.js"></script>
+    <link rel="stylesheet" href="stileMW.css">
+</head>
+<body>
+    <header> <h1>Mouth Watering</h1>
+    </header>
+    <!-- menu -->
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li class="menuTendina">
+            <a href="" class="menuStagioni">Ricette</a>
+            <div class="menuOrizz">
+                <a href="inverno.html">Inverno</a>
+                <a href="primavera.html">Primavera</a>
+                <a href="estate.html">Estate</a>
+                <a href="autunno.html">Autunno</a>
+            </div>
+        </li> 
+        <li><a href="spesa.html">Spesa di stagione</a></li> 
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <!-- responsive menu di default nascosto -->
+    <div class="respMenu">
+        <div class="apri">
+            <img src="foto/apri.png" id="apriMenu" alt="icona menu">
+        </div>
+        <div class="chiudi" id="btnChiudiMenu">
+            <img src="foto/chiudi.png" id="chiudiMenu" alt="icona menu"> 
+        </div>
+        <div class="respMenuTendina" id="respMenuTendina">
+            <a href="index.html">Home</a>
+            <a href="inverno.html">Inverno</a>
+            <a href="primavera.html">Primavera</a>
+            <a href="estate.html">Estate</a>
+            <a href="autunno.html">Autunno</a>
+            <a href="spesa.html">Spesa di stagione</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+    <!-- inizio contenuto della home --> 
+    <div id="home" class="homeContent"> 
+        <article class="primoArt">
+            <h2 class="titIntro">Ciao, piacere di averti qui!</h2>
+            <br>
+            <p> Qui troverai qualche idea, semplice e alla portata di chiunque, per ogni stagione.
+                <br>
+                <br> Non ho fatto la classica divisione per portate perché credo che seguire la stagionalità della frutta e della verdura sia importante.
+                <br>
+                <br> Per approfondire questo argomento puoi visitare la sezione <em><a class="riferimento" href="spesa.html">Spesa di stagione</a></em>.
+            </p>
+        </article>
+        <article class="secondoArt">
+            <p>Non ti resta che navigare nel sito,
+                <br> ma prima ricorda che:</p>
+            <blockquote> Non c'è amore più sincero
+                <br> di quello per il cibo.
+                <br>
+                <br>
+                <cite class="nome"> G. B. Shaw </cite>
+            </blockquote>
+            <br>
+            <h3>Buona navigazione!</h3>
+        </article>
+    </div> 
+    <!-- fine contenuto della home -->
+    <!-- inizio footer -->
+    <div class="finalCredit">
+        <footer class="homeAbout">
+            <p class="credit"> Mouth Watering è un sito realizzato da Giulia Bertini per il corso di Progettazione e Programmazione Web.
+                <br> Per ulteriori informazioni: <a class="mail" href="mailto:g.bertini18@studenti.unipi.it">g.bertini18@studenti.unipi.it</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

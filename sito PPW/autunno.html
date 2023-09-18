@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Giulia Bertini">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> MW | Autunno </title>
+    <link rel="icon" type="image/x-icon" href="foto/favicon.png">
+    <script src="codAutunno.js"></script>
+    <link rel="stylesheet" href="stileMW.css">
+</head>
+<body>
+    <header> <h1>Mouth Watering</h1>
+    </header>
+    <!-- menu -->
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="menuTendina">
+            <a href="" class="menuStagioni">Ricette</a>
+            <div class="menuOrizz">
+                <a href="inverno.html">Inverno</a>
+                <a href="primavera.html">Primavera</a>
+                <a href="estate.html">Estate</a>
+                <a href="#">Autunno</a>
+            </div>
+        </li> 
+        <li><a href="spesa.html">Spesa di stagione</a></li> 
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <!-- responsive menu di default nascosto -->
+    <div class="respMenu">
+        <div class="apri">
+            <img src="foto/apri.png" id="apriMenu" alt="icona menu">
+        </div>
+        <div class="chiudi" id="btnChiudiMenu">
+            <img src="foto/chiudi.png" id="chiudiMenu" alt="icona menu"> 
+        </div>
+        <div class="respMenuTendina" id="respMenuTendina">
+            <a href="index.html">Home</a>
+            <a href="inverno.html">Inverno</a>
+            <a href="primavera.html">Primavera</a>
+            <a href="estate.html">Estate</a>
+            <a href="autunno.html">Autunno</a>
+            <a href="spesa.html">Spesa di stagione</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+    <!-- inizio contenuto della pagina -->
+    <h2>Autunno</h2>
+        <p class="sottotitolo"> Le dosi delle ricette sono per due persone.
+            <br> Fai click sulle foto per scoprirle. </p>
+    <div id="home" class="ricetteContent"> 
+        <article class="artUno">
+            <h3 class="titoliRicette">Vellutata di zucca e ceci</h3>
+            <img src="foto/vellutatazucca.png" id="vellutatazucca" class="imgRicetta" alt="Vellutata di zucca">
+            <div class="ingredientiAut1" id="ingredientiAut1">
+                <p>Ingredienti: 1 kg di zucca pulita, 1 porro, 250 g di ceci (se precotti, sgocciolati), 1 l di brodo vegetale, 3 cucchiai di panna vegetale, crostini, sale, pepe e olio. </p>
+            </div>
+            <div class="ricettaAut1" id="ricettaAut1"></div>
+            <div class="closeAut1" id="closeAut1"><input type="button" id="chiudiRicettaAut1" value="Chiudi"></div>
+        </article>
+        <article class="artDue">
+            <h3 class="titoliRicette">Risotto ai funghi</h3> 
+            <img src="foto/risottofunghi.png" id="risottofunghi" class="imgRicetta" alt="Risotto ai funghi"> 
+            <div class="ingredientiAut2" id="ingredientiAut2">
+                <p> Ingredienti: 500 g di funghi freschi, 160 g di riso carnaroli, 2 l di brodo vegetale, ½ cipolla, 1 spicchio d’aglio, 2 cucchiai di panna vegetale, ½ bicchiere di vino bianco, olio, sale, pepe, peperoncino e prezzemolo. </p>
+            </div>
+            <div class="ricettaAut2" id="ricettaAut2"></div>
+            <div class="closeAut2" id="closeAut2"><input type="button" id="chiudiRicettaAut2" value="Chiudi"></div>
+        </article>
+    </div>
+    <!-- fine contenuto della pagina -->
+    <!-- inizio footer -->
+    <div class="finalCredit">
+        <footer class="ricetteSpesa">
+            <p class="credit"> Mouth Watering è un sito realizzato da Giulia Bertini per il corso di Progettazione e Programmazione Web.
+                <br> Per ulteriori informazioni: <a class="mail" href="mailto:g.bertini18@studenti.unipi.it">g.bertini18@studenti.unipi.it</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

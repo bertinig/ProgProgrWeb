@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Giulia Bertini">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> MW | Spesa </title>
+    <link rel="icon" type="image/x-icon" href="foto/favicon.png">
+    <script src="codSpesa.js"></script>
+    <link rel="stylesheet" href="stileMW.css">
+</head>
+<body>
+    <header> <h1>Mouth Watering</h1>
+    </header>
+    <!-- menu -->
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="menuTendina">
+            <a href="" class="menuStagioni">Ricette</a>
+            <div class="menuOrizz">
+                <a href="inverno.html">Inverno</a>
+                <a href="primavera.html">Primavera</a>
+                <a href="estate.html">Estate</a>
+                <a href="autunno.html">Autunno</a>
+            </div>
+        </li> 
+        <li><a href="#">Spesa di stagione</a></li> 
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <!-- responsive menu di default nascosto -->
+    <div class="respMenu">
+        <div class="apri">
+            <img src="foto/apri.png" id="apriMenu" alt="icona menu">
+        </div>
+        <div class="chiudi" id="btnChiudiMenu">
+            <img src="foto/chiudi.png" id="chiudiMenu" alt="icona menu"> 
+        </div>
+        <div class="respMenuTendina" id="respMenuTendina">
+            <a href="index.html">Home</a>
+            <a href="inverno.html">Inverno</a>
+            <a href="primavera.html">Primavera</a>
+            <a href="estate.html">Estate</a>
+            <a href="autunno.html">Autunno</a>
+            <a href="spesa.html">Spesa di stagione</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+    <!-- contenuto della pagina -->
+    <h2>5 motivi per mangiare di stagione</h2>
+    <div id="home" class="ricetteContent">
+        <article class="spesaUno">
+            <p> Nel 2021 il ministero della Salute ha pubblicato il documento <cite>“Salute a portata di mano: decalogo per il consumo di frutta e verdura”</cite>  con l’obiettivo di incrementare il consumo di fibre nelle famiglie. Nel documento, in linea con quanto proposto dall’<abbr title="Organizzazione Mondiale della Sanità">OMS</abbr>
+                e dalla <abbr title="Food and Agriculture Organization of the United Nations">FAO</abbr>, 
+                raccomandano l’assunzione di circa 400 g di frutta e/o verdura al giorno, che equivalgono a 5/6 porzioni, da dividere nei pasti principali 
+                per prevenire e attenuare diverse carenze di macronutrienti
+                <br>
+                <br> Oggigiorno siamo abituati a trovare qualsiasi tipo di frutta e verdura sui banchi degli alimentari, indipendentemente dal periodo dell’anno. 
+                <br> Ma perché frutta e verdura andrebbero consumate solo fresche e di stagione? 
+                Ecco qui 5 buoni motivi: </p>
+            <ol>
+                <li>Le proprietà della frutta e della verdura di stagione hanno maggiori proprietà, tra cui vitamine, sali minerali e fitonutrienti perché sono portati a completa maturazione naturalmente. Inoltre, l’OMS raccomanda di variare il colore della frutta e della verdura che consumiamo ogni giorno perché a diversi colori corrispondono diverse proprietà nutritive</li>
+                <li>I prodotti coltivati in serra o dall’altra parte del mondo sono più belli esteticamente, ma meno saporiti e dunque meno gustosi. A causa del lungo trasporto, i prodotti vengono raccolti prematuramente, cioè prima di poter sviluppare appieno le loro proprietà nutritive e organolettiche</li>
+            </ol>
+        </article>
+        <article class="spesaDue">
+            <ol>
+                <li>La coltivazione di stagione richiede meno energia e risorse idriche rispetto alle coltivazioni non stagionali e quindi mangiare di stagione è meno dispendioso, vengono abbattuti i costi di produzione, trasporto e mantenimento del prodotto.</li>
+                <li>Seguire la stagionalità aiuta a ridurre l’impatto di additivi sull’ambiente e sulla nostra tavola perché, quando la frutta e la verdura vengono coltivate nel loro periodo naturale, crescono e prosperano senza il bisogno di essere modificate per crescere e per resistere ai parassiti</li>
+                <li>Ultimo, ma non meno importante: scegliere prodotti del territorio e da coltivazione biologica è un primo passo verso un mondo più pulito. Acquistare frutta e verdura a km0, direttamente da chi produce vicino casa non è soltanto una scelta responsabile, un primo passo verso un mondo più pulito, ma è anche un grande guadagno sia in termine economici che di qualità e freschezza</li>
+            </ol>
+            <p>
+                Adesso non ti resta che scoprire quale frutta e verdura dovresti consumare a seconda della stagione: 
+                <br> seleziona un periodo dal menù qui sotto, poi metti alla prova quanto hai appreso con il gioco!
+            </p>
+        </article>
+    </div>
+    <div>
+        <select id="scegliMese" class="menuScelta"></select>
+        <div id="risultatoTot"></div>
+        <br>
+        <a href="gioco.html" id="buttonGioco">Gioco</a>
+    </div>
+    <!-- fine contenuto della pagina -->
+    <!-- inizio footer -->
+    <div class="finalCredit">
+    <footer class="ricetteSpesa">
+        <p class="credit"> Mouth Watering è un sito realizzato da Giulia Bertini per il corso di Progettazione e Programmazione Web.
+            <br> Per ulteriori informazioni: <a class="mail" href="mailto:g.bertini18@studenti.unipi.it">g.bertini18@studenti.unipi.it</a>
+        </p>
+    </footer>
+    </div>
+</body>
+</html>

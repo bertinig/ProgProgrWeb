@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Giulia Bertini">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> MW | Gioco </title>
+    <link rel="icon" type="image/x-icon" href="foto/favicon.png">
+    <script src="codGioco.js"></script>
+    <link rel="stylesheet" href="stileMW.css">
+</head>
+<body>
+    <header> <h1>Mouth Watering</h1>
+    </header>
+    <!-- menu -->
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="menuTendina">
+            <a href="" class="menuStagioni">Ricette</a>
+            <div class="menuOrizz">
+                <a href="inverno.html">Inverno</a>
+                <a href="primavera.html">Primavera</a>
+                <a href="estate.html">Estate</a>
+                <a href="autunno.html">Autunno</a>
+            </div>
+        </li> 
+        <li><a href="spesa.html">Spesa di stagione</a></li> 
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <!-- responsive menu di default nascosto -->
+    <div class="respMenu">
+        <div class="apri">
+            <img src="foto/apri.png" id="apriMenu" alt="icona menu">
+        </div>
+        <div class="chiudi" id="btnChiudiMenu">
+            <img src="foto/chiudi.png" id="chiudiMenu" alt="icona menu"> 
+        </div>
+        <div class="respMenuTendina" id="respMenuTendina">
+            <a href="index.html">Home</a>
+            <a href="inverno.html">Inverno</a>
+            <a href="primavera.html">Primavera</a>
+            <a href="estate.html">Estate</a>
+            <a href="autunno.html">Autunno</a>
+            <a href="spesa.html">Spesa di stagione</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+    <!-- contenuto della pagina -->
+    <h2>Gioco</h2>
+        <p class="sottotitolo"> Di seguito alcune semplici regole per giocare:
+            <br> trascina le icone nel riquadro che ritieni corretto, ma attenzione
+            <br> una volta rilasciate non potrai modificare le tue scelte fino alla fine.
+            <br> Dopo aver inserito tutte le icone premi "Conferma" e scopri il risultato! 
+        </p>
+    <div id="home" class="giocoContent">
+        <div class="riquadroGioco">
+            <h3>Inverno</h3>
+            <div id="inverno" class="rettangolo"></div>
+        </div>
+        <div class="riquadroGioco">
+            <h3>Primavera</h3>
+            <div id="primavera" class="rettangolo"></div>
+        </div>
+        <div class="riquadroGioco">
+            <h3>Estate</h3>
+            <div id="estate" class="rettangolo"></div>
+        </div>
+        <div class="riquadroGioco">
+            <h3>Autunno</h3>
+            <div id="autunno" class="rettangolo"></div>
+        </div>
+        <div id="imgGioco" class="iconGioco">
+            <img src="foto/albicocca.png" id="albicocca" draggable="true" alt="albicocca">
+            <img src="foto/anguria.png" id="anguria" draggable="true" alt="anguria">
+            <img src="foto/arancia.png" id="arancia" draggable="true" alt="arancia">
+            <img src="foto/asparagi.png" id="asparago" draggable="true" alt="asparago">
+            <img src="foto/barbabietola.png" id="barbabietola" draggable="true" alt="barbabietola">            
+            <img src="foto/broccoli.png" id="broccoli" draggable="true" alt="broccolo">
+            <img src="foto/cachi.png" id="cachi" draggable="true" alt="cachi">
+            <img src="foto/carciofo.png" id="carciofo" draggable="true" alt="carciofo">
+            <img src="foto/castagna.png" id="castagna" draggable="true" alt="castagna">
+            <img src="foto/fico.png" id="fico" draggable="true" alt="fico">
+            <img src="foto/finocchio.png" id="finocchio" draggable="true" alt="finocchio">
+            <img src="foto/fragola.png" id="fragola" draggable="true" alt="fragola">
+            <img src="foto/kiwi.png" id="kiwi" draggable="true" alt="kiwi">
+            <img src="foto/melanzana.png" id="melanzana" draggable="true" alt="melanzana">
+            <img src="foto/melone.png" id="melone" draggable="true" alt="melone">
+            <img src="foto/peperone.png" id="peperone" draggable="true" alt="peperone">
+            <img src="foto/pomodoro.png" id="pomodoro" draggable="true" alt="pomodoro">
+            <img src="foto/uva.png" id="uva" draggable="true" alt="uva">
+            <img src="foto/zucca.png" id="zucca" draggable="true" alt="zucca">
+            <img src="foto/zucchina.png" id="zucchina" draggable="true" alt="zucchina">
+        </div>
+        <br>
+        <input type="button" id="confermaGioco" value="Conferma">
+        <div id="messaggioGiocoTop">
+            <article><h3>Ben fatto!</h3></article>
+        </div>
+        <div id="bottoneTop">
+            <input type="button" id="giocaAncora" value="Gioca ancora">
+        </div>
+        <div id="messaggioGiocoFlop">
+            <article><h3>Peccato, c'è qualcosa di sbagliato.</h3></article>
+        </div>
+        <div id="bottoneFlop">
+            <input type="button" id="riprova" value="Riprova">
+        </div>
+    </div> 
+    <!-- fine contenuto della pagina -->
+    <!-- inizio footer -->
+    <div class="finalCredit">
+        <footer class="ricetteSpesa">
+            <p class="credit"> Mouth Watering è un sito realizzato da Giulia Bertini per il corso di Progettazione e Programmazione Web.
+                <br> Per ulteriori informazioni: <a class="mail" href="mailto:g.bertini18@studenti.unipi.it">g.bertini18@studenti.unipi.it</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

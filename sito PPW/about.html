@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Giulia Bertini">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> MW | About </title>
+    <link rel="icon" type="image/x-icon" href="foto/favicon.png">
+    <script src="codIndex.js"></script> 
+    <link rel="stylesheet" href="stileMW.css">
+</head>
+<body>
+    <header> <h1>Mouth Watering</h1>
+    </header>
+    <!-- menu -->
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="menuTendina">
+            <a href="" class="menuStagioni">Ricette</a>
+            <div class="menuOrizz">
+                <a href="inverno.html">Inverno</a>
+                <a href="primavera.html">Primavera</a>
+                <a href="estate.html">Estate</a>
+                <a href="autunno.html">Autunno</a>
+            </div>
+        </li> 
+        <li><a href="spesa.html">Spesa di stagione</a></li> 
+        <li><a href="#">About</a></li>
+    </ul>
+    <!-- responsive menu di default nascosto -->
+    <div class="respMenu">
+        <div class="apri">
+            <img src="foto/apri.png" id="apriMenu" alt="icona menu">
+        </div>
+        <div class="chiudi" id="btnChiudiMenu">
+            <img src="foto/chiudi.png" id="chiudiMenu" alt="icona menu"> 
+        </div>
+        <div class="respMenuTendina" id="respMenuTendina">
+            <a href="index.html">Home</a>
+            <a href="inverno.html">Inverno</a>
+            <a href="primavera.html">Primavera</a>
+            <a href="estate.html">Estate</a>
+            <a href="autunno.html">Autunno</a>
+            <a href="spesa.html">Spesa di stagione</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+    <!-- inzio contenuto della pagina -->
+    <div id="home" class="homeContent">
+        <article class="primoArt">
+            <h3>Su di me</h3>
+            <p>Mi chiamo Giulia, frequento il <abbr title="Corso di Laurea"> CdL </abbr> di Informatica Umanistica a Pisa;
+                <br> questo sito, infatti, è stato realizzato principalmente per l'esame di <abbr title="Programmazione e Progettazione Web"> PPW, </abbr> ma non solo! 
+                <br>
+                <br>Infatti, recentemente ho riscoperto la passione per la cucina, o almeno, ho capito che mi piace cucinare.
+                <br> Spesso, infatti, mi capita di farlo, sperimentando anche un po'.
+                <br>
+                <br> Ho pensato, quindi, di unire l'utile al dilettevole creando questo sito dove ho provato a senbilizzare sull'importanza della stagionalità.
+            </p>
+        </article>
+        <article class="secondoArt">
+            <h3>Crediti</h3>
+            <p> Le ricette sono state scritte da me. 
+                <br> Le foto delle ricette sono state scaricate da <a class="sito" href="https://it.freepik.com/">Freepik</a> e Google Immagini ed editate da me, mentre le icone nel gioco e quelle nel menù sono state scaricate da <a class="sito" href="https://www.flaticon.com/">Flaticon.</a> 
+                <br>
+                <br> Il testo nella sezione <em><a class="riferimento" href="spesa.html">Spesa di stagione</a></em>, di cui le fonti sono <a class="sito" href="https://www.humanitas-sanpiox.it/news/cibi-di-stagione-perche-fanno-bene-alla-salute-e-allambiente/">Humanitas San Pio X</a> e <a class="sito" href="https://www.supradyn.it/live-your-age/alimentazione/frutta-e-verdura-5-porzioni-al-giorno-cosa-preferire-e-quando-mangiarla/">Supradyn</a>, è stato scritto da me
+                <br> Le pagine HTML e CSS sono state validate correttamente dal validatore del W3C. 
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" class="imgCSS" alt="CSS Valido!">
+                    </a>
+                <br>
+                    <br> Il codice JavaScript è in parte una rielaborazione delle dispense del professor Ambriola,
+                <br> in parte, invece, preso dalle dispense e opportunamente marcato. 
+            </p>
+        </article>
+    </div> 
+    <!-- fine contenuto della pagina -->
+    <!-- inizio footer -->
+    <div class="finalCredit">
+        <footer class="homeAbout">
+            <p class="credit"> Mouth Watering è un sito realizzato da Giulia Bertini per il corso di Progettazione e Programmazione Web.
+                <br> Per ulteriori informazioni: <a class="mail" href="mailto:g.bertini18@studenti.unipi.it">g.bertini18@studenti.unipi.it</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
